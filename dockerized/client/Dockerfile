@@ -2,12 +2,12 @@ FROM node:19-alpine
 
 WORKDIR /tour_de_app
 
-COPY . .
+COPY package.json .
 
 RUN npm install
 
-EXPOSE 80
+COPY . .
 
-ENV PATH="./node_modules/.bin:$PATH"
+EXPOSE 80
 
 CMD ["npm", "start"]
