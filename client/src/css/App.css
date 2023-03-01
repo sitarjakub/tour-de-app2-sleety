@@ -1,0 +1,227 @@
+.App .add-post{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.App .add-post a{
+    padding: 5px 10px;
+
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+
+    background-color: var(--primary);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.App .add-post a:hover{
+    opacity: .75;
+}
+
+.App .no-data{
+    margin-left: 20px;
+}
+.App .posts{
+    width: 500px;
+    max-width: 70%;
+    margin: 20px auto 0;
+}
+.App .posts-filters-button{
+    display: block;
+    padding: 3px 10px;
+    margin: 0 0 20px auto;
+
+    font-size: 16px;
+
+    background-color: #eee;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.App .posts-filters-button:hover{
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+.App .filters{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 160px;
+    width: calc(100% - 40px);
+    margin-bottom: 20px;
+    padding: 20px;
+
+    line-height: 110%;
+    background-color: #eee;
+    border-radius: 30px;
+}
+.App .filters h3{
+    margin-bottom: 8px;
+    text-align: center;
+}
+.App .filters-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 100%;
+}
+.App .filters-flex input{
+    width: 50%;
+}
+.App .filters label{
+    margin-top: 5px;
+    font-size: 14px;
+}
+.App .filters input, .App .filters select{
+    padding: 5px 10px;
+
+    font-size: 16px;
+    
+    background-color: #dedede;
+    border: none;
+    border-radius: 10px;
+}
+.App .posts-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+/*////////POST
+/////////////////*/
+.App .post{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 160px;
+    width: 100%;
+    padding: 20px;
+
+    line-height: 120%;
+    background-color: #eee;
+    border-radius: 30px;
+    transition: .5s;
+}
+.App .post:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #aaa;
+}
+.App .post-edit, .App .post-delete{
+    position: absolute;
+    top: 20px;
+
+    font-size: 16px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.App .post-edit{
+    right: 20px;
+}
+.App .post-delete{
+    right: 50px;
+}
+.App .post-edit:hover, .App .post-delete:hover{
+    transform: scale(1.5);
+}
+.App .post-date{
+    margin-bottom: 10px;
+}
+/*
+////Edit post form
+//////////////////
+*/
+.App .post form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+.App .post label{
+    margin-top: 5px;
+    font-size: 14px;
+}
+.App .post input, .App .post select{
+    padding: 5px 10px;
+
+    font-size: 16px;
+    
+    background-color: #dedede;
+    border: none;
+    border-radius: 10px;
+}
+.App .post .programmer{
+    display: flex;
+    align-items: center;
+}
+.App .post .programmer input, .App .post .programmer select{
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.App .post .programmers{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.App .post .programmers li{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.App .post .programmers li::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+
+    height: 1px;
+    width: 100%;
+
+    background-color: #000;
+    transition: .5s;
+}
+.App .post .programmers li:hover::before{
+    left: 0;
+}
+.App .post .programmer button{
+    padding: 5px 10px;
+    
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: .5s;
+}
+.App .post .programmer button:hover{
+    opacity: .75;
+}
+.App .post textarea{
+    min-height: 100px;
+    padding: 5px 10px;
+
+    font-size: 16px;
+    
+    background-color: #dedede;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+}

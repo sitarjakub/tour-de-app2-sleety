@@ -1,0 +1,52 @@
+.Profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: calc(100vh - 100px);
+}
+
+.Profile form{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    max-width: 300px;
+}
+.Profile label{
+    margin-top: 5px;
+    font-size: 14px;
+}
+.Profile input{
+    padding: 5px 10px;
+
+    font-size: 16px;
+    
+    background-color: #dedede;
+    border: none;
+    border-radius: 10px;
+}
+.Profile button[type=submit]{
+    margin-top: 20px;
+    padding: 5px 10px;
+
+    color: #fff;
+    font-size: 16px;
+
+    background-color: var(--primary);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.Profile button[type=submit]:hover{
+    opacity: .75;
+}
+.Profile .error{
+    margin-top: 20px;
+
+    color: var(--secondary);
+    font-size: 14px;
+    text-align: center;
+}

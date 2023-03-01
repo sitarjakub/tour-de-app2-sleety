@@ -1,0 +1,114 @@
+.Add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: calc(100vh - 100px);
+}
+
+.Add form{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    max-width: 300px;
+}
+.Add label{
+    margin-top: 5px;
+    font-size: 14px;
+}
+.Add input, .Add select{
+    padding: 5px 10px;
+
+    font-size: 16px;
+    
+    background-color: #dedede;
+    border: none;
+    border-radius: 10px;
+}
+.Add .programmer{
+    display: flex;
+    align-items: center;
+}
+.Add .programmer input, .Add .programmer select{
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.Add .programmer button{
+    padding: 5px 10px;
+    
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: .5s;
+}
+.Add .programmer button:hover{
+    opacity: .75;
+}
+.Add .programmers{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Add .programmers li{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Add .programmers li::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+
+    height: 1px;
+    width: 100%;
+
+    background-color: #000;
+    transition: .5s;
+}
+.Add .programmers li:hover::before{
+    left: 0;
+}
+.Add textarea{
+    min-height: 100px;
+    padding: 5px 10px;
+
+    font-size: 16px;
+    
+    background-color: #dedede;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+}
+.Add button[type=submit]{
+    margin-top: 20px;
+    padding: 5px 10px;
+
+    color: #fff;
+    font-size: 16px;
+
+    background-color: var(--primary);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.Add button[type=submit]:hover{
+    opacity: .75;
+}
+.Add .error{
+    margin-top: 20px;
+
+    color: var(--secondary);
+    font-size: 14px;
+    text-align: center;
+}
